@@ -1,138 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Jackson Goulart</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 {
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
-  }
-
-  h5 {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 {
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
-  }
-
-  .bg-2 {
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 {
-      background-color: #ffffff; /* White */
-      color: #555555;
-  }
-  .bg-4 {
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
-  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Eu</a>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Quem</a></li>
-        <li><a href="#">O que</a></li>
-        <li><a href="#">Onde</a></li>
-      </ul>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">Sobre</a>
+            </li>
+            <li>
+                <a href="#experience">Experiências</a>
+            </li>
+            <li>
+                <a href="#education">Educação</a>
+            </li>
+            <li>
+                <a href="#projects">Projetos</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Jackson Goulart</h1>
+            <h2>Licenciado em Computação</h2>
+            <a href="#" class="btn-rounded-white">Download CV</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
     </div>
-  </div>
-</nav>
+    <!-- End #lead -->
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Quem sou eu?</h3>
-  <img src="jack.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>Aprendendo em construção</h3>
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Um pouco sobre mim</h3>
-  <p>Estudante de computação Pythonist que curte um bom e velho Rock in Roll e curte tocar guitarra e violão nos tempos livres. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">
-  <h3 class="margin">Onde me encontrar ?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Atuamente estou residindo em Sinop MT.</p>
-      <!--<img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">-->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62471.89735169762!2d-55.53783868956966!3d-11.870679248606555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a77fe80bc27573%3A0x1207800617733e83!2sSinop%2C+State+of+Mato+Grosso!5e0!3m2!1sen!2sbr!4v1473517051359" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">Um pouco sobre mim</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
+                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
+                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-4">
-      <p>Sinop</p>
-      <h5>Sinop é um município brasileiro do estado do Mato Grosso. Sendo a quarta maior cidade deste estado, sua população em 2015
-       é estimada em 132 934 habitantes, o que coloca Sinop em 212º lugar no Brasil, 114º lugar entre os municípios interioranos e 4º
-       lugar no estado. Possui uma área de 3.194,339 km². É conhecida como a Capital do Nortão, sendo atualmente polo de referência em
-       todo o norte mato-grossense. </h8>
-         <h5>fonte https://pt.wikipedia.org/wiki/Sinop</h6>
-      </div>
-    <div class="col-sm-4">
-      <p>
-        Sinop foto aerea
-      </p>
-      <img src="sinop.jpg" alt="Sinop" width="350" height="250">
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experiências</h2>
+        <div id="experience-timeline">
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+    <!-- End #experience -->
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <a href="https://github.com/JackGoulart">
-    <img alt="Github" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_gray-32.png">
-  </a>
-  <a href="https://www.facebook.com/jackson.goulart.7">
-    <img alt="Facebook" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_gray-32.png">
-   </a>
-  </footer>
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+        </div>
+        <!-- End .education-block -->
 
+        <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Habilidades</h2>
+        <ul>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>GraphQL</li>
+            <li>Raspberry</li>
+            <li>Arduino</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Entre em contato</h2>
+       
+        <h3> <a href="mailto:jackwgoulart@gmail.com">jackwgoulart@gmail.com</a> </h3>
+         
+       
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyleft &#x1f12f; 2021 Jackson Willian Goulart
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/JackGoulart" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
